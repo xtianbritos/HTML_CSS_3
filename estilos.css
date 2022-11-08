@@ -1,16 +1,25 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Verdana;
-    box-sizing: border-box;
+    font-family: system-ui;
+    color: antiquewhite;
+}
+
+body {
+    background-color: black;
 }
 
 header {
     width: 100%;
-    background-color: aquamarine;
+    background-color: rgb(13, 37, 116);
     display: flex;
     justify-content: space-evenly;
     padding: 20px 0;
+}
+
+header h1 {
+    font-size: 50px;
+    color: aqua;
 }
 
 nav {
@@ -20,18 +29,65 @@ nav {
 nav ul li {
     list-style-type: none;
     display: inline;
+    font-size: 20px;
 }
 
 nav ul li a:hover{
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.250);
-    color: white;
+    background-color: rgb(50, 206, 245);
+    color: black;
     transition: .2s;
+    box-shadow: 0 0 20px rgb(111, 111, 218), 0 0 20px rgb(111, 111, 218);
+
 }
 
 nav ul li a {
-    color: black;
     padding: 15px;
     text-decoration: none;
     font-weight: bold;
+}
+
+main{
+    background-color: rgb(47, 26, 143);
+    margin: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.foto {
+    height: 400px;
+    object-fit: cover;
+    margin: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgb(111, 111, 218), 0 0 20px rgb(111, 111, 218);
+
+}
+
+main div p {
+    font-size: 20px;
+}
+
+main div p span {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.imagenes {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagenes img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin: 20px;
+}
+
+.lenguajes {
+    display: block;
+    width: 400px;
+    padding: 20px;
+    margin: auto;
 }
